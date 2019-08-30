@@ -7,8 +7,8 @@ from openpyxl import load_workbook
 root = Tk()
 root.title("Travel Transport Employee Clock")
 root.geometry("600x600")
-writer = ExcelWriter(r'//mycloudex2ultra/Public/EmployeeClock/Clock.xlsx', engine='openpyxl')
-book = load_workbook(r'//mycloudex2ultra/Public/EmployeeClock/Clock.xlsx')
+writer = ExcelWriter(r'test.xlsx', engine='openpyxl')
+book = load_workbook(r'test.xlsx')
 writer.book = book
 writer.sheets = {ws.title: ws for ws in book.worksheets}
 check1 = False
